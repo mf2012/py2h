@@ -23,8 +23,10 @@ NOTE: collector.sh needs to be executed in separate shell as it is run as a serv
 
 ## Usage
 1. Open first terminal and execute below.
-```bash collector.sh
+```
+bash collector.sh
 ```
 2. Open next terminal and to check results execute below.
-```bash status_check.sh <file_name_of_the_log_file>
+```
+bash status_check.sh <file_name_of_the_log_file>
 ```
