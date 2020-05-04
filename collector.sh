@@ -26,7 +26,7 @@ test_url() {
 
 ## Main Service
 echo "Press [CTRL+C] to stop"
-while
+while :
 do
   test_url
   sleep ${TEST_RATE}
