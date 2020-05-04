@@ -30,3 +30,7 @@ bash collector.sh
 ```
 bash status_check.sh <file_name_of_the_log_file>
 ```
+
+## TODO
+- Timestamps
+- Filter results to last 5 min. to provide history view

@@ -14,20 +14,22 @@ if [ "$1" == "" ]; then
     usage
     exit 1
 fi
-LOG_FILE="$1"
+LOG_FILE="${1}"
 
 # read file and provide insignts
 # total requests:
-t_checks=$(wc -l ${LOG_FILE} |awk '{print $1}')
-# 200_checks=$(grep ^200 ${LOG_FILE} |wc -l| awk '{print $1}' )
-# 500_checks=$(grep ^500 ${LOG_FILE} |wc -l| awk '{print $1}' )
+CHECKS_TOTAL="$(wc -l ${LOG_FILE}|awk '{print $1}')"
+CHECKS_200="$(grep ^200 ${LOG_FILE}|wc -l| awk '{print $1}')"
 
 
 
 
-echo "Total checks: ${t_checks}"
-#echo "OK(200) checks: ${200_checks}"
+echo "Last check at: $(stat ${LOG_FILE}|grep ^Modify| sed 's/^Modify: //')"
+echo "Total   checks: ${CHECKS_TOTAL}"
+echo "OK(200) checks: ${CHECKS_200}"
+echo ""
 #echo "Other checks: ${500_checks}"
-#echo ""
-
+echo "#----"
+echo "Amount  Code Body"
+echo "#----"
 cat ${LOG_FILE}| sort|uniq -c |sort -n
