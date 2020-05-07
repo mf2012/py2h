@@ -1,14 +1,14 @@
 # Python challenge solution version
 
-This is not within the time limit of the challenge and is only to proof I can actually write Python
+This is not within the 2h time limit of the challenge and is only to proof I can actually write Python
 
-## I've added configs in YAML for both collector.py and analyser.py
+*I've added configs in YAML for both collector.py and analyser.py*
 
 
 ## How to run it
-1. Open first terminal and execute below.
+1. Open first terminal and execute below after git clone.
 ```
-cd py
+cd py2h/py
 pip3 install -r requirements.txt
 
 python3 collector
