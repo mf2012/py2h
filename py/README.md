@@ -1,4 +1,4 @@
-# Python challenge solution version
+# Python challenge solution
 
 This is not within the 2h time limit of the challenge and is only to proof I can actually write Python
 
@@ -17,7 +17,7 @@ This will run check with the interval set in the collector_cfg.yaml file.
 
 2. In second terminal run below for stats.
 ```
-python3 analyse ./analyse_cfg.yaml
+python3 analyse ./analyser_cfg.yaml
 ```
 Configuration file has only two variables:
 - logfile

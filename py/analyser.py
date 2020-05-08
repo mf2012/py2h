@@ -5,7 +5,7 @@ from collections import Counter
 
 if len(sys.argv) != 2:
    print('usage: '+sys.argv[0]+' <conf_file>')
-   print('   ex: '+sys.argv[0]+' ./analyse_cfg.yml')
+   print('   ex: '+sys.argv[0]+' ./analyser_cfg.yml')
    sys.exit(1)
 
 cfg = None
