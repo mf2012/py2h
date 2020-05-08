@@ -1,0 +1,5 @@
+
+analyser:
+    log_file: "test_log.log"
+    # Time in minutes it will indicate last X min from the log file
+    time_window: "1"
