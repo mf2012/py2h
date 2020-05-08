@@ -11,7 +11,7 @@ This is not within the 2h time limit of the challenge and is only to proof I can
 cd py2h/py
 pip3 install -r requirements.txt
 
-python3 collector
+python3 collector ./collector_cfg.yaml
 ```
 This will run check with the interval set in the collector_cfg.yaml file.
 
